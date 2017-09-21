@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  height: 100%;
+
+  > div {
+    padding: 30px;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  .baskets {
+    flex: 2 1 auto;
+    box-shadow: 6px 0 20px rgba(0, 0, 0, .3);
+    z-index: 2;
+
+    .form {
+      padding-top: 40px;
+
+      label {
+        font-size: 12px;
+        margin: 6px;
+      }
+
+      input {
+        border-radius: 2px;
+        border: none;
+        margin: 6px;
+        padding: 6px 0 6px 6px;
+
+        &[type=number] {
+          width: 40px;
+        }
+      }
+
+      button {
+        color: #ff7800;
+        padding: 8px;
+        cursor: pointer;
+        background: white;
+        border: solid 1px #ff7800;
+        height: 30px;
+
+        &:hover {
+          border-color: #346392;
+          color: #346392;
+        }
+      }
+    }
+  }
+
+  .shop {
+    flex: 1 1 auto;
+    background: white;
+
+    button {
+      color: #ff7800;
+      padding: 8px;
+      cursor: pointer;
+      background: none;
+      border: solid 1px #ff7800;
+      height: 30px;
+
+      &:hover {
+        border-color: #346392;
+        color: #346392;
+      }
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+}

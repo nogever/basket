@@ -1,0 +1,31 @@
+.item {
+  flex: 1 1 auto;
+  border-radius: 2px;
+  background: white;
+  margin: 8px 0;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+  }
+
+  &.done {
+    opacity: .4;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: #ff7800;
+      width: 100%;
+      z-index: 3;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+  }
+}
